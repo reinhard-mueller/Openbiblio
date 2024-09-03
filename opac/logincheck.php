@@ -28,6 +28,16 @@ if (! OBIB_DEMO_FLG) {
     $returnPage = $pages[$tab];
     $_SESSION["returnPage"] = $returnPage;
 
+    #****************************************************************************
+    #*  IGAL - get logged in user
+    #****************************************************************************
+
+    igal_nur_fuer(IGAL_MITGLIEDER);
+
+    $_SESSION["mbrid"] = $igal_joomla_user->id;
+    $_SESSION["mbrtoken"] = $igal_joomla_user->id;
+    $_GET["mbrid"] = $igal_joomla_user->id;
+
     # ****************************************************************************
     # * Checking to see if session variables exist
     # ****************************************************************************

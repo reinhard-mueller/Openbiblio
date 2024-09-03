@@ -42,6 +42,10 @@
 
 <?php if ($nav == "memberaccount") { ?>
  &raquo; <?php echo $navLoc->getText("memberaccount"); ?><br>
+<?php } else { ?>
+ <a href="../opac/mbr_account.php" class="alt1">Benutzerkonto</a><br> <!-- IGAL -->
 <?php } ?>
 
-<a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=".H(addslashes(U($helpPage))); ?>')"><?php echo $navLoc->getText("Help"); ?></a>
+<!-- IGAL <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=".H(addslashes(U($helpPage))); ?>')"><?php echo $navLoc->getText("Help"); ?></a> -->
+
+<br/><a class="alt1" href="/">IGAL-Startseite</a> <!-- IGAL -->

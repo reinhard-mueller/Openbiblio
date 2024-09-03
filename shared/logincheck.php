@@ -30,35 +30,59 @@ if (!OBIB_DEMO_FLG) {
     $_SESSION["returnPage"] = $returnPage;
 
     #****************************************************************************
+    #*  IGAL - aktuell angemeldeter Benutzer
+    #****************************************************************************
+
+    igal_nur_fuer(IGAL_MITGLIEDER);
+
+    $_SESSION["userid"] = $igal_joomla_user->username;
+
+    if (in_array(8, $igal_joomla_user->getAuthorisedViewLevels())) {
+      # Bibliothekar
+      $_SESSION["hasCircAuth"] = true;
+      $_SESSION["hasCircMbrAuth"] = true;
+      $_SESSION["hasCatalogAuth"] = true;
+      $_SESSION["hasAdminAuth"] = true;
+      $_SESSION["hasReportsAuth"] = true;
+    } else {
+      # Einfaches Mitglied
+      $_SESSION["hasCircAuth"] = false;
+      $_SESSION["hasCircMbrAuth"] = false;
+      $_SESSION["hasCatalogAuth"] = false;
+      $_SESSION["hasAdminAuth"] = false;
+      $_SESSION["hasReportsAuth"] = false;
+   }
+
+    #****************************************************************************
     #*  Checking to see if session variables exist
     #****************************************************************************
-    if (!isset($_SESSION["userid"]) or ($_SESSION["userid"] == "")) {
-        header("Location: ../shared/loginform.php");
-        exit();
-    }
-    if (!isset($_SESSION["token"]) or ($_SESSION["token"] == "")) {
-        header("Location: ../shared/loginform.php");
-        exit();
-    }
+#   if (!isset($_SESSION["userid"]) or ($_SESSION["userid"] == "")) {
+#       header("Location: ../shared/loginform.php");
+#       exit();
+#   }
+#   if (!isset($_SESSION["token"]) or ($_SESSION["token"] == "")) {
+#       header("Location: ../shared/loginform.php");
+#       exit();
+#   }
 
     #****************************************************************************
     #*  Checking session table to see if session_id has timed out
     #****************************************************************************
-    $sessQ = new SessionQuery();
-    //Changes PVD(8.0.x)
-    $sessQ->connect_e();
-    if ($sessQ->errorOccurred()) {
-        displayErrorPage($sessQ);
-    }
-    if (!$sessQ->validToken($_SESSION["userid"], $_SESSION["token"])) {
-        if ($sessQ->errorOccurred()) {
-            displayErrorPage($sessQ);
-        }
-        $sessQ->close();
-        header("Location: ../shared/loginform.php?RET=" . U($returnPage));
-        exit();
-    }
-    $sessQ->close();
+#   $sessQ = new SessionQuery();
+#   //Changes PVD(8.0.x)
+#   $sessQ->connect_e();
+#   if ($sessQ->errorOccurred()) {
+#       displayErrorPage($sessQ);
+#   }
+#   if (!$sessQ->validToken($_SESSION["userid"], $_SESSION["token"])) {
+#       if ($sessQ->errorOccurred()) {
+#           displayErrorPage($sessQ);
+#       }
+#       $sessQ->close();
+#       header("Location: ../shared/loginform.php?RET=" . U($returnPage));
+#       exit();
+#   }
+#   $sessQ->close();
 
     #****************************************************************************
     #*  Checking authorization for this tab

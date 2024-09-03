@@ -3,6 +3,8 @@
  * See the file COPYRIGHT.html for more details.
  */
 
+require_once "$_SERVER[DOCUMENT_ROOT]/bibliothek/joomla.php"; // IGAL
+
 # Forcibly disable register_globals
 if (ini_get('register_globals')) {
     foreach ($_REQUEST as $k => $v) {

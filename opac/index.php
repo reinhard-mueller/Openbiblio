@@ -26,6 +26,7 @@ if (isset($_GET["msg"])) {
     $msg = "";
 }
 require_once ("../shared/header_opac.php");
+require_once ("../opac/logincheck.php");       // IGAL
 ?>
 
 <h1>
