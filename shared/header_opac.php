@@ -59,7 +59,7 @@ function returnLookup(formName,fieldName,val) {
      **************************************************************************************-->
 <table class="primary" style="width:100%;border:none;border-spacing:0px">
   <tr style="padding:0px" bgcolor="<?php echo H(OBIB_TITLE_BG);?>">
-    <td style="padding:0px" width="100%" class="title" valign="top">
+    <td style="padding:10px 0 0 3.1rem" width="100%" class="title" valign="top">
        <?php
          if (OBIB_LIBRARY_IMAGE_URL != "") {
            echo "<img align=\"middle\" src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\">";
@@ -72,15 +72,15 @@ function returnLookup(formName,fieldName,val) {
     <td valign="top">
       <table class="primary" style="border:none;border-spacing:0px">
         <tr>
-          <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php echo $headerLoc->getText("headerTodaysDate"); ?></font></td>
+          <td style="padding:0 0 0 3.1rem;white-space:nowrap" class="title"><font class="small"><?php echo $headerLoc->getText("headerTodaysDate"); ?></font></td>
           <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php echo H(date($headerLoc->getText("headerDateFormat")));?></font></td>
         </tr>
         <tr>
-          <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_HOURS != "") echo $headerLoc->getText("headerLibraryHours");?></font></td>
+          <td style="padding:0 0 0 3.1rem;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_HOURS != "") echo $headerLoc->getText("headerLibraryHours");?></font></td>
           <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_HOURS != "") echo H(OBIB_LIBRARY_HOURS);?></font></td>
         </tr>
         <tr>
-          <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_PHONE != "") echo $headerLoc->getText("headerLibraryPhone");?></font></td>
+          <td style="padding:0 0 0 3.1rem;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_PHONE != "") echo $headerLoc->getText("headerLibraryPhone");?></font></td>
           <td style="padding:0px;white-space:nowrap" class="title"><font class="small"><?php if (OBIB_LIBRARY_PHONE != "") echo H(OBIB_LIBRARY_PHONE);?></font></td>
         </tr>
       </table>
@@ -92,7 +92,7 @@ function returnLookup(formName,fieldName,val) {
      **************************************************************************************-->
 <table class="primary" style="width:100%;border:none;border-spacing:0px">
   <tr>
-    <td style="padding:0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
+    <td style="padding:0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
   </tr>
 </table>
 <!-- **************************************************************************************
@@ -100,10 +100,10 @@ function returnLookup(formName,fieldName,val) {
      **************************************************************************************-->
 <table style="height:100%;width:100%;border:none;border-spacing:0px">
   <tr bgcolor="<?php echo H(OBIB_ALT1_BG);?>">
-    <td style="padding:0px" colspan="6"><img src="../images/shim.gif" width="1" height="15" border="0"></td>
+    <td style="padding:0 0 0 3.1rem" colspan="6"><img src="../images/shim.gif" width="1" height="15" border="0"></td>
   </tr>
   <tr>
-    <td style="padding:0px" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img src="../images/shim.gif" width="10" height="1" border="0"></td>
+    <td style="padding:0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img src="../images/shim.gif" width="10" height="1" border="0"></td>
     <td style="padding:0px" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img src="../images/shim.gif" width="140" height="1" border="0"></td>
     <td style="padding:0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
     <td style="padding:0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="10" height="1" border="0"></td>
@@ -111,7 +111,7 @@ function returnLookup(formName,fieldName,val) {
     <td style="padding:0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="10" height="1" border="0"></td>
   </tr>
   <tr>
-    <td style="padding:0px" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
+    <td style="padding:0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
     <td style="padding:0px" valign="top" bgcolor="<?php echo H(OBIB_ALT1_BG);?>">
       <font  class="alt1">
       <?php include("../navbars/opac.php"); ?>
