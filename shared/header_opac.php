@@ -51,7 +51,7 @@ function returnLookup(formName,fieldName,val) {
         && preg_match('/^[a-zA-Z0-9_]+$/', $focus_form_field)) {
       echo 'onLoad="self.focus();document.'.$focus_form_name.".".$focus_form_field.'.focus()"';
     }
-  } ?> >
+  } ?> style="margin-top:127px">
 
 
 <!-- **************************************************************************************
@@ -62,7 +62,7 @@ function returnLookup(formName,fieldName,val) {
     <td style="padding:10px 0 0 3.1rem" width="100%" class="title" valign="top">
        <?php
          if (OBIB_LIBRARY_IMAGE_URL != "") {
-           echo "<img align=\"middle\" src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\">";
+           echo "<img style=\"margin-top:-117px\" src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\">";
          }
          if (!OBIB_LIBRARY_USE_IMAGE_ONLY) {
            echo " ".H(OBIB_LIBRARY_NAME);
