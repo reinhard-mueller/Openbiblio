@@ -85,6 +85,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
         echo " " . H(OBIB_LIBRARY_NAME);
     }
     ?>
+       <div style="font-weight:normal;font-size:.85rem;">Interessengemeinschaft Ahnenforscher Ländle<br>Landesverein für Familienforschung in Vorarlberg</div>
     </td>
 			<td valign="top">
 				<table class="primary" style="border: none; border-spacing: 0px">

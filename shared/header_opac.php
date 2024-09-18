@@ -59,7 +59,7 @@ function returnLookup(formName,fieldName,val) {
      **************************************************************************************-->
 <table class="primary" style="width:100%;border:none;border-spacing:0px">
   <tr style="padding:0px" bgcolor="<?php echo H(OBIB_TITLE_BG);?>">
-    <td style="padding:10px 0 0 3.1rem" width="100%" class="title" valign="top">
+    <td style="padding:0 0 0 3.1rem" width="100%" class="title" valign="top">
        <?php
          if (OBIB_LIBRARY_IMAGE_URL != "") {
            echo "<img style=\"margin-top:-117px\" src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\">";
@@ -68,6 +68,7 @@ function returnLookup(formName,fieldName,val) {
            echo " ".H(OBIB_LIBRARY_NAME);
          }
        ?>
+       <div style="font-weight:normal;font-size:.85rem;">Interessengemeinschaft Ahnenforscher Ländle<br>Landesverein für Familienforschung in Vorarlberg</div>
     </td>
     <td valign="top">
       <table class="primary" style="border:none;border-spacing:0px">
@@ -85,14 +86,6 @@ function returnLookup(formName,fieldName,val) {
         </tr>
       </table>
     </td>
-  </tr>
-</table>
-<!-- **************************************************************************************
-     * Tabs
-     **************************************************************************************-->
-<table class="primary" style="width:100%;border:none;border-spacing:0px">
-  <tr>
-    <td style="padding:0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img src="../images/shim.gif" width="1" height="1" border="0"></td>
   </tr>
 </table>
 <!-- **************************************************************************************
