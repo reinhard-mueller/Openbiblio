@@ -76,7 +76,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
 	<table class="primary"
 		style="width: 100%; border: none; border-spacing: 0px">
 		<tr bgcolor="<?php echo H(OBIB_TITLE_BG);?>">
-			<td style="padding: 0px" width="100%" class="title" valign="top">
+			<td style="padding: 10px 0 0 3.1rem" width="100%" class="title" valign="top">
        <?php
     if (OBIB_LIBRARY_IMAGE_URL != "") {
         echo "<img align=\"middle\" src=\"" . H(OBIB_LIBRARY_IMAGE_URL) . "\" border=\"0\">";
@@ -116,7 +116,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
 	<table class="primary"
 		style="width: 100%; border: none; border-spacing: 0px">
 		<tr>
-			<td style="padding: 0px" bgcolor="<?php echo H(OBIB_TITLE_BG);?>"><img
+			<td style="padding: 0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_TITLE_BG);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
 			<td style="padding: 0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
@@ -145,7 +145,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
 				border="0"></td>
 		</tr>
 		<tr bgcolor="<?php echo H(OBIB_TITLE_BG);?>">
-			<td style="padding: 0px" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img
+			<td style="padding: 0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
 
     <?php if ($tab == "home") { ?>
@@ -232,13 +232,13 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
 		</tr>
 		<tr bgcolor="<?php echo H(OBIB_TITLE_BG);?>">
     <?php if ($tab == "home") { ?>
-      <td style="padding: 0px" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img
+      <td style="padding: 0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
 			<td class="tab1" style="padding: 0px; white-space: nowrap"> <?php echo $headerLoc->getText("headerHome"); ?></td>
 			<td style="padding: 0px" bgcolor="<?php echo H(OBIB_ALT1_BG);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
     <?php } else { ?>
-      <td style="padding: 0px" bgcolor="<?php echo H(OBIB_ALT2_BG);?>"><img
+      <td style="padding: 0 0 0 3.1rem" bgcolor="<?php echo H(OBIB_ALT2_BG);?>"><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
 			<td class="tab2" style="padding: 0px; white-space: nowrap"><a
 				href="../home/index.php" class="tab"><?php echo $headerLoc->getText("headerHome"); ?></a>
@@ -332,7 +332,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
 
 		</tr>
 		<tr bgcolor="<?php echo H(OBIB_BORDER_COLOR);?>">
-			<td style="padding: 0px" colspan="3"
+			<td style="padding: 0 0 0 3.1rem" colspan="3"
 				<?php if ($tab == "home") { echo " bgcolor='".H(OBIB_ALT1_BG)."'"; } ?>><img
 				src="../images/shim.gif" width="1" height="1" border="0"></td>
 			<td style="padding: 0px"><img src="../images/shim.gif" width="1"
