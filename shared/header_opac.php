@@ -62,7 +62,7 @@ function returnLookup(formName,fieldName,val) {
     <td style="padding:0 0 0 3.1rem" width="100%" class="title" valign="top">
        <?php
          if (OBIB_LIBRARY_IMAGE_URL != "") {
-           echo "<a style=\"margin-top:-117px\" href=\"/\"><img src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\"></a>";
+           echo "<div style=\"margin-top:-117px\"><a href=\"/\"><img src=\"".H(OBIB_LIBRARY_IMAGE_URL)."\" border=\"0\"></a></div>";
          }
          if (!OBIB_LIBRARY_USE_IMAGE_ONLY) {
            echo " ".H(OBIB_LIBRARY_NAME);
