@@ -221,6 +221,7 @@ td.title, div.title {
   border-color: <?php echo H(OBIB_BORDER_COLOR);?>;
   border-width: <?php echo H(OBIB_BORDER_WIDTH) . "px";?>;
   text-align: <?php echo H(OBIB_TITLE_ALIGN);?>;
+  padding-left: 3.1rem; /* IGAL */
 }
 td.alt1 {
   background-color: <?php echo H(OBIB_ALT1_BG);?>;
@@ -467,7 +468,6 @@ div.errorbox li { margin-left: 0 }
  #logo {
     float: left;
     padding-right: 10px;
-    padding-left: 3.1rem; /* IGAL */
     margin-top: -117px; /* IGAL */
  }
  #imglogo {
@@ -699,4 +699,3 @@ div.errorbox li { margin-left: 0 }
        width: 98%;
     }
  }
- 
