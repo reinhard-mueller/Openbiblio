@@ -466,7 +466,7 @@ div.errorbox li { margin-left: 0 }
  }
  /* Logo */
  #logo {
-    float: left;
+    /* float: left; IGAL */
     padding-right: 10px;
     margin-top: -117px; /* IGAL */
  }
