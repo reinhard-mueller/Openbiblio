@@ -51,7 +51,7 @@ function returnLookup(formName,fieldName,val) {
         && preg_match('/^[a-zA-Z0-9_]+$/', $focus_form_field)) {
       echo 'onLoad="self.focus();document.'.$focus_form_name.".".$focus_form_field.'.focus()"';
     }
-  } ?> style="margin-top:127px">
+  } ?>>
 
 
 <!-- **************************************************************************************

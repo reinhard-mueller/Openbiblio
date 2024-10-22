@@ -87,7 +87,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
         echo 'onLoad="self.focus();document.' . $focus_form_name . "." . $focus_form_field . '.focus()"';
     }
 }
-?> style="margin-top:127px">
+?>>
 
     <!-- **************************************************************************************
      * Library Name and hours
@@ -165,3 +165,4 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
                 <?php } ?>
             </div>
     	</div>
+

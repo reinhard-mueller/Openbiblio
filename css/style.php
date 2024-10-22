@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   margin: 0;
+  margin-top: 127px;    /* IGAL */
 }
 
 /*********************************************************
@@ -466,6 +467,8 @@ div.errorbox li { margin-left: 0 }
  #logo {
     float: left;
     padding-right: 10px;
+    padding-left: 3.1rem; /* IGAL */
+    margin-top: -117px; /* IGAL */
  }
  #imglogo {
     border: 0;
