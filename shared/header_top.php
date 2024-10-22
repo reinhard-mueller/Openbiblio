@@ -117,7 +117,7 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
                         echo '<div id="headertitle"> ' . OBIB_LIBRARY_NAME . '</div>';
                     }
                  ?>
-                    <div style="font-weight:normal;font-size:.85rem;">Interessengemeinschaft Ahnenforscher Ländle<br>Landesverein für Familienforschung in Vorarlberg</div> <!-- IGAL -->
+                    <div style="clear:both;font-weight:normal;font-size:.85rem;margin-bottom:1rem">Interessengemeinschaft Ahnenforscher Ländle<br>Landesverein für Familienforschung in Vorarlberg</div> <!-- IGAL -->
                  </div>
             </div>
 
