@@ -501,6 +501,7 @@ div.errorbox li { margin-left: 0 }
     background-color: <?php echo H(OBIB_TITLE_BG);?>;
     position: absolute;
     padding-top: 1px;
+    padding-left: 3.1rem; /* IGAL */
  }
  .tab1.tabnew, .tab2.tabnew {
     float: left;
@@ -514,7 +515,7 @@ div.errorbox li { margin-left: 0 }
  *  div - Top-Navigation
  *********************************************************/
  .navigationLeft {
-    padding-left: 10px;
+    padding-left: 3.1rem; /* IGAL */
     width: 140px;
     height: 100%;
     overflow: hidden;
